@@ -12,9 +12,8 @@ app.get('/', function(req, res){
 
 // GET /pixel
 app.get('/pixel', function(req, res){
-  var params = req.params;
-  console.log(called );
-  console.log(res);
+  var params = req.query;
+  console.log('Called pixel image api');
   console.log(params);
   res.status(200).send();
 });

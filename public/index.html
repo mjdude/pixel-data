@@ -5,6 +5,12 @@
     <title>Test Pixel Data</title>
   </head>
   <body>
-    <img src="http://localhost:3000/pixel?orderID=12345&orderVal=99.95">
+    <form id="email-form">
+      <input type="text" name="email"/>
+      <input type="submit"/>
+    </form>
+    <img src="http://localhost:3000/pixel?orderID=12345&orderVal=99.95&$email">
+    <script src="/js/jquery-2.2.3.min.js"/>
+    <script src="/js/app.js"/>
   </body>
 </html>
