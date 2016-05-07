@@ -10,10 +10,13 @@ app.get('/', function(req, res){
 
 // Log data fron client
 
-app.get('/img', function(req, res){
+// GET /pixel
+app.get('/pixel', function(req, res){
   var params = req.params;
+  console.log(called );
+  console.log(res);
   console.log(params);
-
+  res.status(200).send();
 });
 
 app.listen(PORT, function() {
